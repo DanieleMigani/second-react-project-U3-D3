@@ -1,17 +1,12 @@
-import React from 'react';
+import Container from "react-bootstrap/Container";
 
-
-function CustomWelcome( Jumbotron, Container) {
-  return (
-    <Jumbotron fluid>
-      <Container>
-        <h1>Benvenuti nel nostro shop online!</h1>
-        <p>
-          Qui troverete tutto ciò di cui avete bisogno per la vostra casa e il vostro giardino.
-        </p>
-      </Container>
-    </Jumbotron>
-  );
+function CustomWelcome() {
+    return (
+        <Container className="my-4 p-5 bg-danger text-white rounded">
+            <h1>Mondavidori</h1>
+            <p>Benvenuto nella libreria online più grande al mondo</p>
+        </Container>
+    );
 }
 
 export default CustomWelcome;
