@@ -13,8 +13,8 @@ class AllTheBooks extends Component {
                 <Row className="align-items-stretch">
                     {data.map((book) => {
                         return (
-                            <Col xs={2} className="mb-3">
-                                <Card className="h-100 d-flex justify-content-between" key={book.asin}>
+                            <Col  xs={12} sm={6} md={4} lg={3} className=" mb-3">
+                                <Card className="h-100 d-flex justify-content-between " key={book.asin}>
                                     <Card.Img variant="top" src={book.img} width="300px" height="300px" />
                                     <Card.Body>
                                         <Card.Title>{book.title}</Card.Title>
