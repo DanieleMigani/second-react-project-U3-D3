@@ -1,19 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 function CustomNavbar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">DendiBook</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWkiX0kx_ZTVp3MUiaMiK91dwt4bM5Wji_Uh9as0DR&s" height="80px" alt="logo" />DendiBook</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#browse">Browse</Nav.Link>
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="d-flex justify-content-end">
+            <Nav.Link href="#home" className='text-dark'>Home</Nav.Link>
+            <Nav.Link href="#about" className='text-dark'>About</Nav.Link>
+            <Nav.Link href="#browse" className='text-dark'>Browse</Nav.Link>
             
             
           </Nav>
